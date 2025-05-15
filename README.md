@@ -1,4 +1,4 @@
-# Smart Battery Management System (SBMS) for Electric Vehicles 🚗🔋
+# Smart Battery Management System (SBMS) for Electric Vehicles 🔋
 
 This repository contains the complete implementation of our graduation project: a Smart Battery Management System (SBMS) designed to enhance electric vehicle (EV) battery performance, safety, and lifespan through predictive analytics, hardware integration, IoT, and mobile development.
 
@@ -18,14 +18,14 @@ The SBMS project aims to solve key challenges in EV battery management by:
 - **IoT Integration**: Real-time monitoring using ESP32, sensors (ACS712, MAX6675), EEPROM, RTC, and cloud communication.
 - **Mobile App**: Displays current charge, health status, and system alerts for user-friendly interaction.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-/hardware           - Schematics, PCB design files, simulation results  
-/ml_model           - Jupyter notebooks, trained models, dataset preprocessing  
-/iot_firmware       - ESP32 firmware code (Arduino/PlatformIO)  
-/mobile_app         - Flutter or Android app source code  
-/documents          - Project report, presentation, and reference materials
+/Hardware           - Schematics, PCB design files, simulation results  
+/ML_Model           - Jupyter notebooks, trained models, dataset preprocessing  
+/IoT_Firmware       - ESP32 firmware code (Arduino/PlatformIO)  
+/Mobile_App         - Flutter or Android app source code  
+/Documents          - Project report, presentation, and reference materials
 ```
 
 ## Tools & Technologies
