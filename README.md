@@ -31,8 +31,8 @@ The SBMS project aims to solve key challenges in EV battery management by:
 ## Tools & Technologies
 
 - Python (ML), Scikit-learn, Pandas, Matplotlib  
-- ESP32, Arduino IDE, C/C++  
-- KiCad / EasyEDA for hardware design  
+- ESP32, Arduino IDE, C  
+- Altium Designer for hardware design  
 - Flutter / Android Studio for mobile app  
 - Firebase / MQTT for data communication  
 
@@ -43,8 +43,8 @@ The SBMS project aims to solve key challenges in EV battery management by:
 
 ## Developers
 
+- Abdelrahman Khaled Sobhi 
 - Mahmoud Mohamed Mahmoud  
-- Abdelrahman Khaled Sobhi  
 - Youssef Ashraf Abdel-Moez  
 - Alaa Mohamed Mekawi  
 - Karima Mahmoud Elnady  
