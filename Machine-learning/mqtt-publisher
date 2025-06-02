@@ -16,9 +16,9 @@ def publish_to_mqtt(soc, soh):
 
         def on_connect(client, userdata, flags, reasonCode, properties=None):
             if reasonCode == 0:
-                print("✅ Connected to HiveMQ Cloud")
+                print("Connected to HiveMQ Cloud")
             else:
-                print(f"❌ Failed to connect, reason code {reasonCode}")
+                print(f"Failed to connect, reason code {reasonCode}")
 
         client.on_connect = on_connect
 
@@ -35,6 +35,6 @@ def publish_to_mqtt(soc, soh):
         client.loop_stop()
         client.disconnect()
     except socket.gaierror:
-        print("❌ MQTT Error: DNS resolution failed. Check your internet connection.")
+        print("MQTT Error: DNS resolution failed. Check your internet connection.")
     except Exception as e:
-        print(f"❌ MQTT Error: {e}")
+        print(f"MQTT Error: {e}")
