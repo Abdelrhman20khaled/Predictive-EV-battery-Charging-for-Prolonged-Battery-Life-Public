@@ -16,7 +16,6 @@ class _SoCScreenState extends State<SoCScreen> {
 
   Map<String, dynamic>? lastChargingData;
   bool isLoading = true;
-  String? userDeviceName;
 
   @override
   void initState() {
