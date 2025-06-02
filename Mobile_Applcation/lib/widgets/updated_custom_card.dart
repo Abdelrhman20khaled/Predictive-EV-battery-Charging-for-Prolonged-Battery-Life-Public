@@ -4,7 +4,7 @@ class FilledPercentageCard extends StatelessWidget {
   final double cardWidth;
   final double cardHeight;
   final String title;
-  final double percentage; // value between 0.0 and 1.0
+  final double percentage; 
 
   const FilledPercentageCard({
     super.key,
@@ -13,8 +13,7 @@ class FilledPercentageCard extends StatelessWidget {
     required this.title,
     required this.percentage,
   });
-
-  /// Returns a color based on the percentage
+  
   Color getBackgroundColor(double value) {
     if (value < 0.33) {
       return const Color(0xFF01D5A2).withOpacity(0.3);
