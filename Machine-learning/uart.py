@@ -19,5 +19,5 @@ def receive_uart_data():
         current = float(values[2])
         return cycle, voltage, current
     except Exception as e:
-        print(f"❌ Error receiving UART data: {e}")
+        print(f"Error receiving UART data: {e}")
         return None, None, None
