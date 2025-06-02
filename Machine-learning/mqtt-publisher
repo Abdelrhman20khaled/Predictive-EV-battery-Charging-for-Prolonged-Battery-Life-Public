@@ -22,15 +22,15 @@ def publish_to_mqtt(soc, soh):
 
         client.on_connect = on_connect
 
-        print("🔌 Connecting to MQTT broker...")
+        print("Connecting to MQTT broker...")
         client.connect(broker, port)
         client.loop_start()
 
         client.publish("raspberrypi/soc", f"{round(soc, 2)}")
         client.publish("raspberrypi/soh", f"{round(soh, 2)}")
 
-        print(f"📡 Sent SOC to raspberrypi/soc: {round(soc, 2)}")
-        print(f"📡 Sent SOH to raspberrypi/soh: {round(soh, 2)}")
+        print(f"Sent SOC to raspberrypi/soc: {round(soc, 2)}")
+        print(f"Sent SOH to raspberrypi/soh: {round(soh, 2)}")
 
         client.loop_stop()
         client.disconnect()
