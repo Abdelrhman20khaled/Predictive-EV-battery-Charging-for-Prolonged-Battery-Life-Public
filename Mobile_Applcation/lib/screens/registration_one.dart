@@ -64,21 +64,6 @@ class _RegistrationState extends State<Registration> {
     }
   }
 
-  Future<String> getDeviceName() async {
-    DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
-    String deviceName = "Unknown Device";
-
-    if (Theme.of(context).platform == TargetPlatform.android) {
-      AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-      deviceName = androidInfo.model ?? "Unknown Android Device";
-    } else if (Theme.of(context).platform == TargetPlatform.iOS) {
-      IosDeviceInfo iosInfo = await deviceInfo.iosInfo;
-      deviceName = iosInfo.utsname.machine ?? "Unknown iOS Device";
-    }
-
-    return deviceName;
-  }
-
   Future<void> insertUserData(
     String userId,
     String email,
