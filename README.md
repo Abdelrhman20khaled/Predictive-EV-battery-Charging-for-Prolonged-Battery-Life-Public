@@ -14,8 +14,8 @@ The SBMS project aims to solve key challenges in EV battery management by:
 ## Key Features
 
 - **Hardware Design**: Buck converter with inductor-capacitor filtering, voltage regulators, and safety components.
-- **ML-Based Battery Prediction**: Accurate SoC/SoH estimations based on real-world datasets and feature importance analysis.
 - **IoT Integration**: Real-time monitoring using ESP32, sensors (ACS712, MAX6675), EEPROM, RTC, and cloud communication.
+- **ML-Based Battery Prediction**: Accurate SoC/SoH estimations based on real-world datasets and feature importance analysis.
 - **Mobile Application**: Displays current charge, health status, and system alerts for user-friendly interaction.
 
 ## Repository Structure
