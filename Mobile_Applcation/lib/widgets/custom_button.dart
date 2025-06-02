@@ -1,4 +1,3 @@
-//import 'package:app_test/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -32,7 +31,7 @@ class CustomButton extends StatelessWidget {
             CircleAvatar(
               backgroundImage:
                   avatar != null && avatar!.isNotEmpty
-                      ? NetworkImage(avatar!) // Load profile image if available
+                      ? NetworkImage(avatar!) 
                       : const AssetImage('assets/default_avatar.png')
                           as ImageProvider,
               radius: 40,
@@ -46,9 +45,6 @@ class CustomButton extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     color: Color.fromARGB(255, 215, 219, 218),
-                    //fontWeight: FontWeight.bold,
-                    //fontStyle: FontStyle.italic,
-                    // fontFamily: 'Lora',
                   ),
                 ),
                 const SizedBox(width: 10),
@@ -59,8 +55,6 @@ class CustomButton extends StatelessWidget {
                     fontSize: 24,
                     color: Color(0xffFAFFFE),
                     fontWeight: FontWeight.bold,
-                    //fontStyle: FontStyle.italic,
-                    // fontFamily: 'Lora',
                   ),
                 ),
               ],
