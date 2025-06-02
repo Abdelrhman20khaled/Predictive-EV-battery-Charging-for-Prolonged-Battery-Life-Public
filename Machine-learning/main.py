@@ -6,11 +6,11 @@ from battery_gui import BatteryGUI
 
 if __name__ == "__main__":
     while True:
-        print("⏳ Waiting for UART data...")
+        print("Waiting for UART data...")
         cycle, voltage, current = receive_uart_data()
 
         if None in (cycle, voltage, current):
-            print("❌ Failed to get valid UART data. Retrying in 3 seconds...")
+            print("Failed to get valid UART data. Retrying in 3 seconds...")
             time.sleep(3)
             continue
 
@@ -21,6 +21,6 @@ if __name__ == "__main__":
 
         publish_to_mqtt(soc, soh)
 
-        print("📲 Launching GUI. Close it to fetch new UART data.")
+        print("Launching GUI. Close it to fetch new UART data.")
         app = BatteryGUI(soc, soh)
         app.mainloop()
