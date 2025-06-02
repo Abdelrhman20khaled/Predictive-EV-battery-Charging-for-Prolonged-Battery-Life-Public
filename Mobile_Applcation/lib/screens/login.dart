@@ -5,7 +5,6 @@ import 'package:ev_logger/widgets/textfield.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:lottie/lottie.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-// Import SoHScreen
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -18,7 +17,7 @@ class _LoginState extends State<Login> {
   TextEditingController email = TextEditingController();
   TextEditingController pass = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  bool _obscureText = true; // Manage visibility of the password
+  bool _obscureText = true; 
 
   final supabase = Supabase.instance.client;
 
