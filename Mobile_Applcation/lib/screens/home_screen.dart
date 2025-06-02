@@ -22,7 +22,6 @@ class _MyHomePageState extends State<MyHomePage> {
   final SupabaseClient supabase = Supabase.instance.client;
   Map<String, dynamic>? userData;
   bool isLoading = true;
-  // bool _hasNotified = false;
 
   @override
   void initState() {
@@ -87,38 +86,10 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  // void checkAndNotify(double SoCValue) async {
-  //   final user = supabase.auth.currentUser;
-  //   if (user == null) {
-  //     debugPrint('[UserProfile] No user is logged in.');
-  //     return;
-  //   }
-  //   final response =
-  //       await supabase
-  //           .from('Users')
-  //           .select('fcm_token')
-  //           .eq('user_id', user.id)
-  //           .single();
-
-  //   final String? fcmToken = response['fcm_token'] as String?;
-  //   if (SoCValue >= 85 && SoCValue <= 95 && !_hasNotified) {
-  //     _hasNotified = true;
-  //     await NotificationService.sendNotification(
-  //       token: fcmToken,
-  //       title: 'High SoC',
-  //       body:
-  //           'Battery SoC is ~ 85-95%. \nYou should stop charging for better battery health!',
-  //     );
-  //     print("Notification sent for SoC $SoCValue%");
-  //   } else if (SoCValue < 85 || SoCValue > 95) {
-  //     _hasNotified = false;
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {
     final double liveSoC = context.watch<MqttService>().liveSoC / 100;
-    // checkAndNotify(liveSoC * 100);
 
     return WillPopScope(
       onWillPop: () async {
