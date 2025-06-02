@@ -21,11 +21,11 @@ The SBMS project aims to solve key challenges in EV battery management by:
 ## Repository Structure
 
 ```
-/Hardware           - Schematics, PCB design files, simulation results  
-/ML_Model           - Jupyter notebooks, trained models, dataset preprocessing  
-/IoT_Firmware       - ESP32 firmware code (Arduino/PlatformIO)  
-/Mobile_App         - Flutter or Android app source code  
-/Documents          - Project report, presentation, and reference materials
+/Hardware Design         - Schematics, PCB design files, simulation results  
+/ML_Model                - Jupyter notebooks, trained models, dataset preprocessing  
+/IoT_Firmware            - ESP32 firmware code (Arduino/PlatformIO)  
+/Mobile_Application      - Flutter or Android app source code  
+/Documents               - Project report, presentation, and reference materials
 ```
 
 ## Tools & Technologies
