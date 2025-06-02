@@ -25,8 +25,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
   @override
   void initState() {
     super.initState();
-
-    // Ensure MQTT is connected globally once
+    
     MqttService().connect();
 
     fetchData();
