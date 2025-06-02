@@ -10,7 +10,6 @@ class TipList extends StatelessWidget {
       expand: false,
       builder:
           (_, controller) => Container(
-            // Opaque outer container for proper shadow rendering
             decoration: BoxDecoration(
               color: Colors.black, // solid color for shadow
               boxShadow: [
@@ -23,7 +22,6 @@ class TipList extends StatelessWidget {
               borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
             ),
             child: Container(
-              // Inner container with desired background opacity
               decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.3),
                 borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
