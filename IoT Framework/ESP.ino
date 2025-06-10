@@ -34,17 +34,13 @@ void loop() {
     sendDataRequested = false;
     interrupts(); // Re-enable interrupts
   }
-
+  
   // 2. Check battery status (handles state changes and Supabase logging)
   checkBatteryStatus();
 
   // 3. Optional: Ensure WiFi stays connected (can be useful for long-running tasks)
   // ensureWiFiConnected(); // Note: Supabase function already checks connection before sending
 
-  // --- Add other non-blocking application code here if needed --- 
-
-  // Example: Small delay to prevent watchdog issues if loop is very fast
-  // and allow background tasks (like WiFi) to run.
   delay(10); 
 }
 
